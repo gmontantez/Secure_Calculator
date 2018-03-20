@@ -1,0 +1,13 @@
+<h3><%=first_name%> <%=last_name%>, please select your math operation below:</h3>
+
+<form method="post" action="options">
+	<input type="radio" name="option" value="+">Add<br>
+	<input type="radio" name="option" value="-">Subtract<br>
+	<input type="radio" name="option" value="*">Multiply<br>
+	<input type="radio" name="option" value="/">Divide<br>
+	<input type="hidden" name="first_name" value="<%=first_name%>">
+    <input type="hidden" name="last_name" value="<%=last_name%>">
+	<input type="hidden" name="username">
+	<input type="hidden" name="password">
+	<input type="submit" value="next"><br>
+</form>

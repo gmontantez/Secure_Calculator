@@ -1,0 +1,9 @@
+<h2>Hello <%=first_name%> <%=last_name%>, your math equation and result is <%=number_1%> <%=session[:option]%> <%=number_2%> = <%=session[:results]%>.</h2> 
+
+<h3> Please select next if you would like to input different numbers.</h3>
+
+<form method="post" action="return">
+	<input type="hidden" name="first_name" value="<%=first_name%>">
+    <input type="hidden" name="last_name" value="<%=last_name%>">
+    <input type="submit" value="next">
+</form>

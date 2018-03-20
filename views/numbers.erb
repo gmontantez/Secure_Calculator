@@ -1,0 +1,9 @@
+<h3><%=first_name%> <%=last_name%>, please input two numbers below:</h3>
+
+<form method="post" action="numbers">
+	First Number:<input type="number" name="number_1"><br>
+	Second Number:<input type="number" name="number_2"><br>
+	<input type="hidden" name="first_name" value="<%=first_name%>">
+    <input type="hidden" name="last_name" value="<%=last_name%>">
+	<input type="submit" value="next">
+</form>
